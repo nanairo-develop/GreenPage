@@ -1,0 +1,25 @@
+{
+  "name": "greenpage",
+  "version": "1.0.0",
+  "description": "グリーンブリッジNANAIROのページ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nanairo-develop/GreenPage.git"
+  },
+  "author": "nanairo-develop",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nanairo-develop/GreenPage/issues"
+  },
+  "homepage": "https://github.com/nanairo-develop/GreenPage#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.4"
+  }
+}
