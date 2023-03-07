@@ -27,7 +27,24 @@
 }
 
 a {
-  .icon {
+  &.icon {
     color: transparent;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000;
+    color: #fff;
+  }
+  .card {
+    background-color: #000;
+    border: 1px solid rgba(255, 255, 255, 0.875);
+  }
+  .bg-white {
+    background-color: #000 !important;
+  }
+  .access-icon {
+    fill: #fff;
   }
 }
