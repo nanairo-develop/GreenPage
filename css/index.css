@@ -45,4 +45,18 @@ a.icon {
     fill: #fff;
   }
 }
+.time-title {
+  width: 6rem;
+}
+.time-start {
+  width: 3rem;
+  text-align: end;
+}
+
+.menu-title {
+  width: 6rem;
+}
+.menu-temp {
+  width: 5rem;
+}
 /*# sourceMappingURL=index.css.map */

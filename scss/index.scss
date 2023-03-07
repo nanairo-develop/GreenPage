@@ -48,3 +48,22 @@ a {
     fill: #fff;
   }
 }
+
+.time {
+  &-title {
+    width: 6rem;
+  }
+  &-start {
+    width: 3rem;
+    text-align: end;
+  }
+}
+
+.menu {
+  &-title {
+    width: 6rem;
+  }
+  &-temp {
+    width: 5rem;
+  }
+}
