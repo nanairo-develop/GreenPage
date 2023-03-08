@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -29,6 +30,8 @@ a.icon {
   color: transparent;
 }
 
+/*
+// ダークモード対応
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #000;
@@ -47,6 +50,12 @@ a.icon {
   .accordion-item {
     background-color: #000;
     border: 1px solid rgba(0, 0, 0, 0.875);
+  }
+}
+*/
+@media (prefers-color-scheme: dark) {
+  .bg-white {
+    background-color: #212529 !important;
   }
 }
 .time-title {

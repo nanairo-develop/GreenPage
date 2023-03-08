@@ -32,6 +32,9 @@ a {
   }
 }
 
+// bootstrap.5.3.0-alphaを使用するため不必要なダークモード対応は削除
+/*
+// ダークモード対応
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #000;
@@ -50,6 +53,12 @@ a {
   .accordion-item {
     background-color: #000;
     border: 1px solid rgba(0, 0, 0, 0.875);
+  }
+}
+*/
+@media (prefers-color-scheme: dark) {
+  .bg-white {
+    background-color: #212529 !important;
   }
 }
 
