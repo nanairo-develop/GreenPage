@@ -44,6 +44,10 @@ a.icon {
   .access-icon {
     fill: #fff;
   }
+  .accordion-item {
+    background-color: #000;
+    border: 1px solid rgba(0, 0, 0, 0.875);
+  }
 }
 .time-title {
   width: 6rem;
