@@ -54,10 +54,15 @@ a.icon {
 }
 */
 @media (prefers-color-scheme: dark) {
-  .bg-white {
-    background-color: #212529 !important;
+  .btn.btn-primary:hover {
+    background: var(--bs-primary-bg-subtle);
+    color: #0d6efd;
   }
 }
+.sticky-top {
+  background: var(--bs-body-bg);
+}
+
 .time-title {
   width: 6rem;
 }
