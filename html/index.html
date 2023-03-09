@@ -188,7 +188,7 @@
               <!--<img src="..." class="card-img-top" alt="..." />-->
               <div class="card-body">
                 <h5 class="card-title">メニュー</h5>
-                <div class="accordion" id="accordionDrink">
+                <div class="accordion" id="accordionMenu">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingDrink">
                       <button
@@ -204,17 +204,19 @@
                     <div
                       id="collapseDrink"
                       class="accordion-collapse collapse show"
-                      aria-labelledby="headingDrink"
-                      data-bs-parent="#accordionDrink">
+                      aria-labelledby="headingDrink">
                       <div class="accordion-body">
                         <div>
                           <p class="menu-title d-inline-block">コーヒー</p>
-                          <p class="menu-temp d-inline-block">(HOT/ICE)</p>
+                          <div class="menu-temp d-inline-block">
+                            <span class="badge bg-hot">HOT</span>
+                            <span class="badge bg-ice">ICE</span>
+                          </div>
                           <p class="d-inline-block">&yen;230</p>
                         </div>
                         <div>
                           <p class="menu-title d-inline-block">アメリカン</p>
-                          <p class="menu-temp d-inline-block">(ICE)</p>
+                          <p class="menu-temp d-inline-block">(HOT)</p>
                           <p class="d-inline-block">&yen;210</p>
                         </div>
                         <div>
@@ -262,30 +264,27 @@
                     </div>
                   </div>
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
+                    <h2 class="accordion-header" id="headingFood">
                       <button
                         class="accordion-button collapsed"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo"
+                        data-bs-target="#collapseFood"
                         aria-expanded="false"
-                        aria-controls="collapseTwo">
-                        Accordion Item #2
+                        aria-controls="collapseFood">
+                        FOOD
                       </button>
                     </h2>
                     <div
-                      id="collapseTwo"
+                      id="collapseFood"
                       class="accordion-collapse collapse"
-                      aria-labelledby="headingTwo"
-                      data-bs-parent="#accordionExample">
+                      aria-labelledby="headingFood">
                       <div class="accordion-body">
-                        <strong>This is the second item's accordion body.</strong> It is hidden by
-                        default, until the collapse plugin adds the appropriate classes that we use
-                        to style each element. These classes control the overall appearance, as well
-                        as the showing and hiding via CSS transitions. You can modify any of this
-                        with custom CSS or overriding our default variables. It's also worth noting
-                        that just about any HTML can go within the <code>.accordion-body</code>,
-                        though the transition does limit overflow.
+                        <div>
+                          <p class="menu-title d-inline-block">コーヒー</p>
+                          <p class="menu-temp d-inline-block">(HOT/ICE)</p>
+                          <p class="d-inline-block">&yen;230</p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -304,8 +303,7 @@
                     <div
                       id="collapseThree"
                       class="accordion-collapse collapse"
-                      aria-labelledby="headingThree"
-                      data-bs-parent="#accordionExample">
+                      aria-labelledby="headingThree">
                       <div class="accordion-body">
                         <strong>This is the third item's accordion body.</strong> It is hidden by
                         default, until the collapse plugin adds the appropriate classes that we use

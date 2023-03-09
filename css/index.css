@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -6,7 +5,6 @@
   -moz-user-select: none;
   user-select: none;
 }
-
 .bd-placeholder-img-lg {
   font-size: calc(1.475rem + 2.7vw);
 }
@@ -18,7 +16,7 @@
 }
 .btn.btn-primary:hover {
   background: #fff;
-  color: #0d6efd;
+  color: var(--bs-primary);
 }
 
 .icon-subway {
@@ -30,33 +28,10 @@ a.icon {
   color: transparent;
 }
 
-/*
-// ダークモード対応
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #000;
-    color: #fff;
-  }
-  .card {
-    background-color: #000;
-    border: 1px solid rgba(255, 255, 255, 0.875);
-  }
-  .bg-white {
-    background-color: #000 !important;
-  }
-  .access-icon {
-    fill: #fff;
-  }
-  .accordion-item {
-    background-color: #000;
-    border: 1px solid rgba(0, 0, 0, 0.875);
-  }
-}
-*/
 @media (prefers-color-scheme: dark) {
   .btn.btn-primary:hover {
     background: var(--bs-primary-bg-subtle);
-    color: #0d6efd;
+    color: var(--bs-primary);
   }
 }
 .sticky-top {
@@ -76,5 +51,14 @@ a.icon {
 }
 .menu-temp {
   width: 5rem;
+}
+
+.bg-hot {
+  background-color: var(--bs-orange) !important;
+}
+.bg-ice {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity)) !important;
+  color: var(--bs-dark);
 }
 /*# sourceMappingURL=index.css.map */

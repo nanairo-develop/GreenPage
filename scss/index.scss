@@ -4,10 +4,9 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-}
-
-.bd-placeholder-img-lg {
-  font-size: calc(1.475rem + 2.7vw);
+  &-lg {
+    font-size: calc(1.475rem + 2.7vw);
+  }
 }
 
 @media (min-width: 1200px) {
@@ -18,7 +17,8 @@
 
 .btn.btn-primary:hover {
   background: #fff;
-  color: #0d6efd;
+  //color: #0d6efd;
+  color: var(--bs-primary);
 }
 
 .icon-subway {
@@ -32,34 +32,11 @@ a {
   }
 }
 
-// bootstrap.5.3.0-alphaを使用するため不必要なダークモード対応は削除
-/*
-// ダークモード対応
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #000;
-    color: #fff;
-  }
-  .card {
-    background-color: #000;
-    border: 1px solid rgba(255, 255, 255, 0.875);
-  }
-  .bg-white {
-    background-color: #000 !important;
-  }
-  .access-icon {
-    fill: #fff;
-  }
-  .accordion-item {
-    background-color: #000;
-    border: 1px solid rgba(0, 0, 0, 0.875);
-  }
-}
-*/
 @media (prefers-color-scheme: dark) {
   .btn.btn-primary:hover {
     background: var(--bs-primary-bg-subtle);
-    color: #0d6efd;
+    //color: #0d6efd;
+    color: var(--bs-primary);
   }
 }
 
@@ -83,5 +60,16 @@ a {
   }
   &-temp {
     width: 5rem;
+  }
+}
+
+.bg {
+  &-hot {
+    background-color: var(--bs-orange) !important;
+  }
+  &-ice {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity)) !important;
+    color: var(--bs-dark);
   }
 }
